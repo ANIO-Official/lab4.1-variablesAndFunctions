@@ -11,8 +11,11 @@ let price = 24
 let quantity = 10
 let taxRate = 0.03
 //-----Task 3 Variables
-let age 
+let age = 22
 let isEmployed = true
+//-----Task 4 Variables
+let discount = 40.69
+
 //----------------------------------------------
 //Task 1 | Print LastName, FirstName
 
@@ -71,3 +74,28 @@ function checkEligibility(age, isEmployed){
 }
 //Run the function using the Global Variables.
 checkEligibility(age, isEmployed)
+
+//Task 4 | Refactoring for Reusability
+
+//Add new parameter and new conditional to check for discount
+function finalSalePrice(price, quantity, taxRate, discount){
+    if (discount){
+        let cost = (price * quantity) - (discount)
+        let finalCost = (cost) * (1 + taxRate)
+        console.log ("Hey you made it in time for our flash sale! Your bill is " + finalCost.toFixed(2))
+    }    
+
+    else{
+        let totalCost = (price * quantity) * (1 + taxRate)
+        console.log( "No discounts today. Your bill is " + totalCost.toFixed(2))
+    }
+    
+}
+//Call new refactored function
+finalSalePrice(price,quantity,taxRate,discount)
+
+/*No changes to value conditional from Task 2 for main 3 parameters. 
+Discount can be a false value because the customer did not find anything
+on discount. So there is no need for a discount conditional check to run
+in this new version of the code. Also the conditional will still check 
+in this new refactoring of the base code. I checked in a test to make sure.*/
