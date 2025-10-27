@@ -7,7 +7,7 @@
 let lastName = "Katherine"  
 let firstName = "Debbie"
 //-----Task 2 Variables
-let price 
+let price = "good price"
 let quantity = 10
 let taxRate = 0.03
 //Task 1 | Print LastName, FirstName
@@ -44,7 +44,7 @@ function calculateTotalCost(price, quantity, taxRate){
 //Ensure the parameters are all valid numbers, otherwise log error message
 /*I used parseFloat to check if the value can be converted to a float value, 
 if it cant, then it's not a number.*/
-if (!parseFloat(price)){
+if (!parseFloat(price) || !parseFloat(quantity) || !parseFloat(taxRate)){
     console.log("Invalid input.")
 }
 else {console.log(calculateTotalCost(price,quantity,taxRate))}
