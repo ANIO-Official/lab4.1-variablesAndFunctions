@@ -22,25 +22,25 @@ https://github.com/ANIO-Official/lab4.1-variablesAndFunctions
 ## My process
 To complete this lab, I did each task 1 a time by the steps provided.
 In general when coding I followed a flow like below
-    0. **Create index.js & README.md files**
-    1. **Create a function with the provided name.**
-        - Add provided parameters
-        - Create Global Variables to test with later.
-    2. **Create the base code**
-        - Conditionals where appropriate
-        - Call necessary functions such as capitalize()
-        - Return the value of the formula performed
-        - or, console.log the resulting value.
-    3. **Test the current code to make sure it works.**
-        - Update global variable values to see if any erros pop up, including null values.
-        - Research MDN and stack overflow for helpful resources
-        - Fix any bugs I come across through trial and error.
-        - Recheck with global variable values.
-    4. **Add & Commit the code**
-        - Once my code worked, I git add and git commit with a descriptive message.
-        - Commit when part of a task is done and when the full task is done to keep progress.
-    5. Push to GitHub
-    6. Update the README file, add, commit, & push changes.
+ 0. **Create index.js & README.md files**
+ 1. **Create a function with the provided name.**
+    Add provided parameters
+    Create Global Variables to test with later.
+ 2. **Create the base code**
+    Conditionals where appropriate
+    Call necessary functions such as capitalize()
+    Return the value of the formula performed
+    or, console.log the resulting value.
+ 3. **Test the current code to make sure it works.**
+    Update global variable values to see if any erros pop up, including null values.
+    Research MDN and stack overflow for helpful resources
+    Fix any bugs I come across through trial and error.
+    Recheck with global variable values.
+ 4. **Add & Commit the code**
+    Once my code worked, I git add and git commit with a descriptive message.
+    Commit when part of a task is done and when the full task is done to keep progress.
+ 5. Push to GitHub
+ 6. Update the README file, add, commit, & push changes.
 
 ### Built with
 - JavaScript
