@@ -10,6 +10,10 @@ let firstName = "Debbie"
 let price = 24
 let quantity = 10
 let taxRate = 0.03
+//-----Task 3 Variables
+let age = 23
+let isEmployed = false
+//----------------------------------------------
 //Task 1 | Print LastName, FirstName
 
 /*Grab only the first letter in a String specifically the parameter provided,
@@ -48,3 +52,21 @@ if (!parseFloat(price) || !parseFloat(quantity) || !parseFloat(taxRate)){
     console.log("Invalid input.")
 }
 else {console.log(calculateTotalCost(price,quantity,taxRate))}
+
+//Task 3 | Check Program Eligibility
+
+/*Multi-conditional check for finding eligibility based on age number and
+employment boolean*/
+function checkEligibility(age, isEmployed){
+    if(age >18 && isEmployed){
+        console.log("You're invited to the program!")
+    }
+    else if (age > 18 && !isEmployed){
+        console.log("We're interested in adding you to our program, please fill this form with more information for further determination.")
+    }
+    else if (age <= 18){
+        console.log("We're sorry to inform you that are not eligible for this program at this time.")
+    }
+}
+//Run the function using the Global Variables.
+checkEligibility(age, isEmployed)
