@@ -11,8 +11,8 @@ let price = 24
 let quantity = 10
 let taxRate = 0.03
 //-----Task 3 Variables
-let age = 23
-let isEmployed = false
+let age 
+let isEmployed = true
 //----------------------------------------------
 //Task 1 | Print LastName, FirstName
 
@@ -67,6 +67,7 @@ function checkEligibility(age, isEmployed){
     else if (age <= 18){
         console.log("We're sorry to inform you that are not eligible for this program at this time.")
     }
+    else {console.log("Please provide a valid age.")}
 }
 //Run the function using the Global Variables.
 checkEligibility(age, isEmployed)
