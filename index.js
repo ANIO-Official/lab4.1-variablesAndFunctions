@@ -3,7 +3,7 @@
 //Global Variables [For Testing Purposes]
 //All values are temporary, you can change it for testing :)
 let lastName = "Katherine"  
-let firstName = "Taylor"
+let firstName = "Debbie"
 
 //Task 1 
 
@@ -21,5 +21,9 @@ function formatFullName(last, first){
     return `Welcome ${last}, ${first}` //Return the formatted string template
 }
 
-//Log out the Last name and first name 
-console.log(formatFullName(lastName,firstName))
+//Check if a name has been provided before logging.
+
+if (!lastName || !firstName){
+    console.log('Invalid name input.')
+}
+else{ console.log(formatFullName(lastName,firstName)) }
