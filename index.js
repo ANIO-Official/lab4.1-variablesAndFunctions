@@ -7,7 +7,7 @@
 let lastName = "Katherine"  
 let firstName = "Debbie"
 //-----Task 2 Variables
-let price = "good price"
+let price = 24
 let quantity = 10
 let taxRate = 0.03
 //Task 1 | Print LastName, FirstName
@@ -38,7 +38,7 @@ else{ console.log(formatFullName(lastName,firstName)) }
 //Calculate total cost of item including tax.
 function calculateTotalCost(price, quantity, taxRate){
     let totalCost = (price * quantity) * (1 + taxRate)
-    return totalCost
+    return totalCost.toFixed(2)
 }
 
 //Ensure the parameters are all valid numbers, otherwise log error message
