@@ -2,10 +2,15 @@
 
 //Global Variables [For Testing Purposes]
 //All values are temporary, you can change it for testing :)
+
+//-----Task 1 Variables 
 let lastName = "Katherine"  
 let firstName = "Debbie"
-
-//Task 1 
+//-----Task 2 Variables
+let price 
+let quantity = 10
+let taxRate = 0.03
+//Task 1 | Print LastName, FirstName
 
 /*Grab only the first letter in a String specifically the parameter provided,
 Make it uppercase.
@@ -27,3 +32,19 @@ if (!lastName || !firstName){
     console.log('Invalid name input.')
 }
 else{ console.log(formatFullName(lastName,firstName)) }
+
+//Task 2 | Find total cost.
+
+//Calculate total cost of item including tax.
+function calculateTotalCost(price, quantity, taxRate){
+    let totalCost = (price * quantity) * (1 + taxRate)
+    return totalCost
+}
+
+//Ensure the parameters are all valid numbers, otherwise log error message
+/*I used parseFloat to check if the value can be converted to a float value, 
+if it cant, then it's not a number.*/
+if (!parseFloat(price)){
+    console.log("Invalid input.")
+}
+else {console.log(calculateTotalCost(price,quantity,taxRate))}
